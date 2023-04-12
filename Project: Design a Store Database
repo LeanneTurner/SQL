@@ -1,1 +1,58 @@
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, item TEXT, wholesale INTEGER, profit INTEGER, sold INTEGER);
+
+INSERT INTO clothing VALUES (1, "skirt", 7, 24, 10);
+
+INSERT INTO clothing VALUES (2, "shirt", 4, 20, 12);
+
+INSERT INTO clothing VALUES (3, "pants", 5, 21, 13);
+
+INSERT INTO clothing VALUES (4, "hat", 3, 15, 3);
+
+INSERT INTO clothing VALUES (5, "bracelet", 2, 12, 6);
+
+INSERT INTO clothing VALUES (6, "ring", 4, 12, 4 );
+
+INSERT INTO clothing VALUES (7, "panties", 3, 9, 15);
+
+INSERT INTO clothing VALUES (8, "underwear", 6, 15, 20);
+
+INSERT INTO clothing VALUES (9, "hosiery", 7, 14, 9);
+
+INSERT INTO clothing VALUES (10, "watch", 10, 50, 13);
+
+INSERT INTO clothing VALUES (11, "hairclip", 2, 6, 20);
+
+INSERT INTO clothing VALUES (12, "socks", 4, 12, 12);
+
+INSERT INTO clothing VALUES (13, "tie", 6, 17, 12);
+
+INSERT INTO clothing VALUES (14, "earrings", 4, 17, 8);
+
+INSERT INTO clothing VALUES (15, "scarf", 5, 25, 10);
+
+
+To show items ordered by wholesale cost:
+
+SELECT * FROM clothing ORDER BY wholesale;
+
+
+To filter profits greater than 6:
+
+SELECT * FROM clothing WHERE profit > 6 ORDER BY wholesale;
+
+
+To show the total number of items sold:
+
+SELECT SUM (sold) FROM clothing;
+
+
+To show the total spent at wholesale:
+
+SELECT SUM (wholesale) FROM clothing;
+
+
+To show total profits:
+
+SELECT SUM (profit) FROM clothing;
+
 
