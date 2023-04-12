@@ -31,28 +31,23 @@ INSERT INTO clothing VALUES (14, "earrings", 4, 17, 8);
 INSERT INTO clothing VALUES (15, "scarf", 5, 25, 10);
 
 
-To show items ordered by wholesale cost:
-
+1.) Show items ordered by wholesale cost:
 SELECT * FROM clothing ORDER BY wholesale;
 
 
-To filter profits greater than 6:
-
+2.) Filter profits greater than 6:
 SELECT * FROM clothing WHERE profit > 6 ORDER BY wholesale;
 
 
-To show the total number of items sold:
-
+3.) Show the total number of items sold:
 SELECT SUM (sold) FROM clothing;
 
 
-To show the total spent at wholesale:
-
+4.) Show the total spent at wholesale:
 SELECT SUM (wholesale) FROM clothing;
 
 
-To show total profits:
-
+5.) Show total profits:
 SELECT SUM (profit) FROM clothing;
 
 
